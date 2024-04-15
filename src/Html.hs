@@ -1,4 +1,4 @@
-module Html where
+module Html (Html (..), HtmlElement (..)) where
 
 data HtmlElement
   = HtmlHeader Int HtmlElement

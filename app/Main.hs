@@ -67,7 +67,7 @@ main = do
   case parseMarkdown file of
     Left (ParseError err) -> do
       putStrLn "Error: "
-      print err
+      putStrLn err
     Right elements -> do
       verbosePrint args "Parsed markdown successfully."
       let output =

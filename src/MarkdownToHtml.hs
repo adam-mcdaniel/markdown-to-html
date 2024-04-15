@@ -1,10 +1,10 @@
--- module MarkdownToHtml (parseMarkdown, ToMarkdown (..), ToHtml (..), Markdown(..), MarkdownElement(..), Html(..), HtmlElement(..)) where
-module MarkdownToHtml where
+module MarkdownToHtml (ToMarkdown (..), ToHtml (..), Markdown(..), MarkdownElement(..), Html(..), HtmlElement(..), CompileToHtml(..)) where
+-- module MarkdownToHtml where
 
 import Html
 import Markdown
-import Parse
-import Styles
+-- import Parse
+-- import Styles
 
 class ToMarkdown a where
   toMarkdown :: a -> Markdown
