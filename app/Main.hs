@@ -42,7 +42,6 @@ verbosePrint :: Show a => Args -> a -> IO ()
 verbosePrint args s =
   if verbose args
     then do
-    -- putStrLn (show s)
     -- Remove quotes from show
       putStrLn $ filter (/= '"') (show s)
     else do
