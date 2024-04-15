@@ -32,7 +32,7 @@ I wrote this project to learn more about Haskell and to get more familiar with p
 
 ## Implementation
 
-The compiler is implemented using the `parsec` library for parsing the markdown file. The parser is a simple recursive descent parser that converts the markdown file into an abstract syntax tree (AST). The AST is then converted into an html string using a simple recursive descent traversal.
+The compiler is implemented using the `parsec` library for parsing the markdown file. The parser is a simple recursive descent parser that converts the markdown file into an abstract syntax tree (AST). Next, the Markdown AST is converted into an HTML AST. Finally, the HTML AST is converted into a string representation of the HTML file.
 
 For command line argument parsing, the compiler uses the `optparse-applicative` library. The compiler can be run with the following command line arguments:
 
