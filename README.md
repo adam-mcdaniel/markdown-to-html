@@ -24,7 +24,7 @@ This project is a simple markdown to html compiler written in Haskell. It is a c
 
 In fact, it's capable of compiling this README file!
 
-![Example Image](./assets/example.png)
+> ![Example Image](./assets/example.png)
 
 I wrote this project to learn more about Haskell and to get more familiar with pure functional programming. I've never written a compiler in a pure functional language before, so this was a fun project to work on.
 

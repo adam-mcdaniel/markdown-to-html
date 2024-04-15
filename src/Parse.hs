@@ -122,7 +122,10 @@ parseBlockQuote :: Parsec String () MarkdownElement
 parseBlockQuote = do
   _ <- string "> "
   content <- manyTill anyChar newline
-  return $ BlockQuote (Text content)
+  -- return $ BlockQuote (Text content)
+  return $ BlockQuote (case parseMarkdown content of
+                         Left _ -> Text content
+                         Right elements -> elements)
 
 parseHorizontalRule :: Parsec String () MarkdownElement
 parseHorizontalRule = do
