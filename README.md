@@ -59,7 +59,7 @@ This will use the `stack` build tool to download and compile the project's depen
 $ # Run the compiler
 $ ./markdown-to-html README.md -o README.html
 $ # (Run with dark mode)
-$ ./markdown-to-html README.md -o -o README-dark.html -d
+$ ./markdown-to-html README.md -o README-dark.html -d
 ```
 
 The commands above will compile the `README.md` file into an `README.html` file. The `-o` flag specifies the output file, and the `-d` flag specifies dark mode. You can also provide your own stylesheet with the `-s` flag.
